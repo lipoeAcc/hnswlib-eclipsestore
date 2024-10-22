@@ -107,6 +107,10 @@ public class HnswIndex<TId, TVector, TItem extends Item<TId, TVector>, TDistance
         this.exactView = new ExactView();
     }
 
+    public AtomicReferenceArray<Node<TItem>> getNodes() {
+        return nodes;
+    }
+
     /**
      * {@inheritDoc}
      */
